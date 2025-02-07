@@ -10,9 +10,9 @@ const Home = () => {
 
     const createRoom = async () => {
         if (!username) return alert("Please enter your name.");
-        const response = await axios.get("https://chat-backend.onrender.com/create-room");
+        const response = await axios.get("https://chat-backend-jb9x.onrender.com/create-room");
         navigate(`/chat/${response.data.roomId}`, { state: { username } });
-    };
+    };    
 
     const joinRoom = () => {
         if (roomId && username) {

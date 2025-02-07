@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { useParams, useLocation } from "react-router-dom";
 import io from "socket.io-client";
 
-const socket = io("https://chat-backend.onrender.com");
+const socket = io("https://chat-backend-jb9x.onrender.com");
 
 const ChatRoom = () => {
     const { roomId } = useParams();
